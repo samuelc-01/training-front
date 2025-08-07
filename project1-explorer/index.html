@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Móveis Customizados</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&family=Dosis:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">&#9632;</span> Ambientes Únicos
+      </div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="sobre">
+        <div class="hero-text">
+          <h1>Ambientes <span>únicos</span> para você!</h1>
+          <p class="texto-main">
+            Nós criamos ambientes <strong>exclusivos</strong> e <strong>únicos</strong>, com muito bom gosto e profissionalismo.<br>
+            Investimos tempo e <span>dedicação no seu projeto</span>.<br><br>
+            Tenha <span>ambientes limpos</span> e bem decorados, transmitindo <strong>elegância</strong> e <strong>finesse</strong> para todo aquele que estiver ali.
+          </p>
+          <a href="#servicos" class="btn-main">Ver serviços</a>
+        </div>
+        <img class="hero-img" src="images/image1.jpg" alt="Pessoa de camisa laranja em uma sala" />
+      </section>
+      <section id="servicos" class="cards-section">
+        <h2>Nossos Serviços</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <img src="images/image1.jpg" alt="Projeto personalizado">
+            <div class="card-content">
+              <h3>Projetos Personalizados</h3>
+              <p>Desenvolvemos ambientes sob medida para o seu estilo de vida.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image1.jpg" alt="Decoração moderna">
+            <div class="card-content">
+              <h3>Decoração Moderna</h3>
+              <p>Design contemporâneo, elegante e funcional para todos os espaços.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/image1.jpg" alt="Consultoria">
+            <div class="card-content">
+              <h3>Consultoria Especializada</h3>
+              <p>Equipe pronta para orientar e transformar seu ambiente.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato" class="contato-section">
+        <h2>Fale conosco</h2>
+        <p>Entre em contato para um orçamento ou tirar dúvidas sobre nossos serviços.</p>
+        <a href="mailto:contato@ambientesunicos.com" class="btn-main">Enviar e-mail</a>
+      </section>
+    </main>
+    <footer>
+      <img class="image-balls" src="images/balls-decoration.svg" alt="bolinhas" />
+      <p class="footer-text">&copy; 2024 Ambientes Únicos. Todos os direitos reservados.</p>
+      <address>
+        <a target="_blank" href="https://instagram.com/samuelc.01">Instagram</a>
+        <a href="#contato">Fale conosco</a>
+      </address>
+    </footer>
+    <script>
+      // Rolagem suave para âncoras
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.length > 1 && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
