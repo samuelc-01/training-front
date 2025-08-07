@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descubra seu destino</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Dosis:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Flutuar</div>
+      <nav class="nav">
+        <a href="#destinos">Destinos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1>O seu próximo <span>destino</span> pode estar aqui...</h1>
+          <p class="texto-main">
+            Aqui você encontra uma seleção de <strong>pacotes completos</strong> para as suas férias!<br>
+            Na <strong>Flutuar</strong> você encontra pacotes de viagens nacionais e internacionais que incluem: passagens aéreas, hotéis, café da manhã, e até seguro viagem com <strong>preços arrasadores!</strong>
+          </p>
+          <a href="#ofertas" class="btn-main">Ver ofertas</a>
+        </div>
+        <img class="hero-img" src="images/img1.jpg" alt="Uma mulher colocando localizações no planeta" />
+      </section>
+      <section id="destinos" class="cards-section">
+        <h2>Destinos em destaque</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <img src="images/img1.jpg" alt="Praia do Destino 1">
+            <div class="card-content">
+              <h3>Praia dos Sonhos</h3>
+              <p>Pacote completo para relaxar e curtir o sol.</p>
+              <a href="#" class="btn-card">Ver detalhes</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/img1.jpg" alt="Montanha do Destino 2">
+            <div class="card-content">
+              <h3>Montanhas Encantadas</h3>
+              <p>Natureza, trilhas e aventura para toda família.</p>
+              <a href="#" class="btn-card">Ver detalhes</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/img1.jpg" alt="Cidade do Destino 3">
+            <div class="card-content">
+              <h3>Cidade Luz</h3>
+              <p>Descubra cultura, gastronomia e diversão urbana.</p>
+              <a href="#" class="btn-card">Ver detalhes</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="ofertas" class="cards-section">
+        <h2>Ofertas imperdíveis</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <img src="images/img1.jpg" alt="Oferta 1">
+            <div class="card-content">
+              <h3>Desconto Caribe</h3>
+              <p>Pacote all-inclusive com 30% OFF.</p>
+              <a href="#" class="btn-card">Aproveitar</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/img1.jpg" alt="Oferta 2">
+            <div class="card-content">
+              <h3>Europa Econômica</h3>
+              <p>Passagem + hotel com preço especial.</p>
+              <a href="#" class="btn-card">Aproveitar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato" class="contato-section">
+        <h2>Fale conosco</h2>
+        <p>Entre em contato para tirar dúvidas ou montar seu pacote personalizado.</p>
+        <a href="mailto:contato@flutuar.com" class="btn-main">Enviar e-mail</a>
+      </section>
+    </main>
+    <footer>
+      <img class="image-wave" src="images/Wave.svg" alt="" />
+      <p class="footer-text">&copy; 2024 Flutuar Viagens. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+      // Rolagem suave para âncoras
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.length > 1 && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,242 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f8f9fb;
+}
+.header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(63,61,86,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  color: #ee24ff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav a {
+  color: #3f3d56;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: #ee24ff;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem 2rem 2rem;
+  background: linear-gradient(90deg, #f8e1ff 0%, #f8f9fb 100%);
+  gap: 2rem;
+}
+.hero-text {
+  max-width: 420px;
+  text-align: left;
+}
+.hero h1 {
+  font-family: 'Dosis', sans-serif;
+  color: #3f3d56;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.hero h1 span {
+  color: #ee24ff;
+}
+.texto-main {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.btn-main {
+  display: inline-block;
+  background: #ee24ff;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(238,36,255,0.08);
+  transition: background 0.2s, color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-main:hover {
+  background: #c41ec7;
+}
+.hero-img {
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(63,61,86,0.10);
+}
+.cards-section {
+  padding: 3rem 2rem 2rem 2rem;
+  background: #fff;
+}
+.cards-section h2 {
+  font-family: 'Dosis', sans-serif;
+  color: #3f3d56;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.card {
+  background: #f8f9fb;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(63,61,86,0.07);
+  overflow: hidden;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(63,61,86,0.13);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.card-content h3 {
+  font-family: 'Dosis', sans-serif;
+  color: #ee24ff;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.card-content p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.btn-card {
+  background: #3f3d56;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-card:hover {
+  background: #ee24ff;
+}
+.contato-section {
+  padding: 3rem 2rem 2rem 2rem;
+  background: #f8e1ff;
+  text-align: center;
+}
+.contato-section h2 {
+  font-family: 'Dosis', sans-serif;
+  color: #3f3d56;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contato-section p {
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+footer {
+  background: #fff;
+  padding: 2rem 0 0.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+.image-wave {
+  width: 100vw;
+  max-width: 64rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.footer-text {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero-img {
+    width: 90vw;
+    max-width: 340px;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 0.5rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav {
+    gap: 1rem;
+  }
+  .cards-section {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .cards-grid {
+    gap: 1rem;
+  }
+  .card img {
+    height: 140px;
+  }
+  .contato-section {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .image-wave {
+    max-width: 100vw;
+  }
+}
