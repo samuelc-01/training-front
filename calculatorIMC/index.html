@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/main.js" defer type="module "></script>
+  </head>
+  <body>
+    <div class="alert-error">Digite somente numeros</div>
+
+    <div class="container">
+      <main class="card">
+        <form>
+          <h1 class="title">Calculo de IMC</h1>
+          <div class="input-wrapper">
+            <label for="inputWeight">Peso(kg)</label>
+            <input type="number" id="inputWeight" />
+          </div>
+          <div class="input-wrapper">
+            <label for="inputHeight">Altura(cm)</label>
+            <input type="number" id="inputHeight" />
+          </div>
+
+          <button>
+            Calcular IMC
+            <img src="./images/arrow.svg" alt="arrow submit" />
+          </button>
+        </form>
+        <a
+          href="https://qbemqfaz.com.br/vida-equilibrada/tabela-imc?gclid=CjwKCAjw5_GmBhBIEiwA5QSMxB-XqmGbjtoHs9ngQIAnKVX6m6g2Lcn26t7FIlb7G56-82wP7eot4xoCU1cQAvD_BwE"
+          target="_blank"
+          >Consulte o seu resultado</a
+        >
+      </main>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="close">
+            <img src="./images/close.svg" alt="close" />
+          </button>
+
+          <span>Seu IMC e de 28</span>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
