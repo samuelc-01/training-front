@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pamonha - Festa Junina</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&family=Dosis:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="images/pamonha-img.png" alt="pamonha" class="logo-img" />
+        <span>Pamonha</span>
+      </div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#ingredientes">Ingredientes</a>
+        <a href="#preparo">Preparo</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="sobre">
+        <div class="hero-text">
+          <h1>Pamonha</h1>
+          <p class="texto-main">Prato típico com milho verde ralado, tradição das festas juninas!</p>
+          <div class="porcoes">
+            <span>Porções</span>
+            <button class="btn-porcao" aria-label="Diminuir"> <img src="images/vector-.svg" alt="-" /> </button>
+            <span class="porcao-num">01</span>
+            <button class="btn-porcao" aria-label="Aumentar"> <img src="images/vector+.svg" alt="+" /> </button>
+          </div>
+        </div>
+        <img class="hero-img" src="images/pamonha-img.png" alt="Pamonha" />
+      </section>
+      <section class="cards-section">
+        <div class="cards-grid">
+          <div class="card" id="ingredientes">
+            <div class="card-header">
+              <img src="images/Vector-compra.svg" alt="Ingredientes" />
+              <h2>Ingredientes</h2>
+            </div>
+            <ul>
+              <li>1 espiga de milho verde</li>
+              <li>1 colher de sopa de açúcar</li>
+              <li>1 colher de sopa de manteiga</li>
+              <li>Sal a gosto</li>
+              <li>Palha de milho (para embrulhar)</li>
+            </ul>
+          </div>
+          <div class="card" id="preparo">
+            <div class="card-header">
+              <img src="images/Vector-2.svg" alt="Modo de preparo" />
+              <h2>Modo de Preparo</h2>
+            </div>
+            <ol>
+              <li>Descasque a espiga de milho e corte os grãos</li>
+              <li>Bata o milho, açúcar, manteiga e o sal no liquidificador</li>
+              <li>Coloque a massa nas palhas de milho e feche bem</li>
+              <li>Cozinhe em água fervente por 40 minutos</li>
+              <li>Deixe esfriar e sirva</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">&copy; 2024 Festa Junina - Pamonha. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+      // Rolagem suave para âncoras
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.length > 1 && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

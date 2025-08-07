@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Serif Pro', 'Dosis', sans-serif;
+}
+body {
+  background: #feece0;
+}
+.header {
+  width: 100%;
+  background: #fff7e6;
+  box-shadow: 0 2px 8px rgba(155,102,71,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  color: #9b6647;
+  font-weight: 700;
+}
+.logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(155,102,71,0.10);
+}
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+.nav a {
+  color: #9b6647;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.nav a:hover {
+  color: #58190a;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem 2rem 2rem;
+  background: linear-gradient(90deg, #feece0 0%, #fff7e6 100%);
+  gap: 2rem;
+}
+.hero-text {
+  max-width: 420px;
+  text-align: left;
+}
+.hero h1 {
+  font-family: 'Dosis', sans-serif;
+  color: #58190a;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.texto-main {
+  color: #9b6647;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+.porcoes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #9b6647;
+  font-weight: 700;
+}
+.btn-porcao {
+  background: #fff7e6;
+  border: 1px solid #9b6647;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.btn-porcao:hover {
+  background: #feece0;
+  border: 1.5px solid #58190a;
+}
+.porcao-num {
+  min-width: 2ch;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #58190a;
+}
+.hero-img {
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(155,102,71,0.10);
+}
+.cards-section {
+  padding: 3rem 2rem 2rem 2rem;
+  background: #fff7e6;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+.card {
+  background: #feece0;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px rgba(155,102,71,0.07);
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.18s, box-shadow 0.18s;
+  padding-bottom: 1.5rem;
+}
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(155,102,71,0.13);
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 1rem 0.5rem 1rem;
+}
+.card-header img {
+  width: 32px;
+  height: 32px;
+}
+.card-header h2 {
+  font-family: 'Dosis', sans-serif;
+  color: #58190a;
+  font-size: 1.3rem;
+  margin: 0;
+}
+.card ul, .card ol {
+  margin: 1rem 1.5rem 0 2.5rem;
+  color: #58190a;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.card ul li, .card ol li {
+  margin-bottom: 0.5rem;
+}
+.footer-text {
+  color: #9b6647;
+  font-size: 1rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+footer {
+  background: #fff7e6;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+  }
+  .hero-text {
+    text-align: center;
+    max-width: 100%;
+  }
+  .hero-img {
+    width: 90vw;
+    max-width: 340px;
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 0.5rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav {
+    gap: 1rem;
+  }
+  .cards-section {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+  }
+  .cards-grid {
+    gap: 1rem;
+  }
+  .card {
+    max-width: 98vw;
+  }
+  .card-header img {
+    width: 28px;
+    height: 28px;
+  }
+}
