@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', 'Dosis', sans-serif;
+}
+body {
+  background: linear-gradient(120deg, #232526 0%, #414345 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0 0 0;
+}
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.header h1 {
+  color: #00b4d8;
+  font-family: 'Dosis', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+}
+.header p {
+  color: #e1e1e6;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+main {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  flex: 1;
+}
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  background: #202024;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,180,216,0.07);
+}
+.student-form input {
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #323238;
+  background: #232526;
+  color: #e1e1e6;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+.student-form input:focus {
+  outline: none;
+  border: 1.5px solid #00b4d8;
+}
+.student-form button {
+  background: #00b4d8;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.student-form button:hover {
+  background: #0077a6;
+}
+.students-section {
+  background: #202024;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 16px rgba(0,180,216,0.07);
+}
+.students-section h2 {
+  color: #00b4d8;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.students-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+.students-list li {
+  background: #232526;
+  border-radius: 0.7rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+  justify-content: space-between;
+  color: #e1e1e6;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,180,216,0.04);
+}
+.students-list li.aprovado {
+  border-left: 5px solid #00b86b;
+}
+.students-list li.reprovado {
+  border-left: 5px solid #ff3b3f;
+}
+.students-list .nome {
+  font-weight: 700;
+  color: #00b4d8;
+}
+.students-list .media {
+  font-weight: 700;
+}
+.students-list .status {
+  font-weight: 700;
+  color: #00b86b;
+}
+.students-list li.reprovado .status {
+  color: #ff3b3f;
+}
+.students-list .empty {
+  color: #888;
+  text-align: center;
+  width: 100%;
+}
+footer {
+  background: #232526;
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+}
+.footer-text {
+  color: #00b4d8;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem 0 0 0;
+  }
+  main {
+    max-width: 98vw;
+    padding: 0 0.5rem;
+  }
+  .student-form, .students-section {
+    padding: 1rem 0.5rem;
+  }
+  .students-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

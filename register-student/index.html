@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Number - Estudantes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Cadastro de Estudantes</h1>
+        <p>Adicione estudantes, notas e veja quem foi aprovado!</p>
+      </header>
+      <main>
+        <form id="student-form" class="student-form">
+          <input type="text" id="nome" placeholder="Nome do estudante" required />
+          <input type="number" id="nota1" placeholder="Nota 1" min="0" max="10" required />
+          <input type="number" id="nota2" placeholder="Nota 2" min="0" max="10" required />
+          <button type="submit">Adicionar</button>
+        </form>
+        <section class="students-section">
+          <h2>Lista de Estudantes</h2>
+          <ul id="students-list" class="students-list"></ul>
+        </section>
+      </main>
+      <footer>
+        <p class="footer-text">&copy; 2024 Find Number. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
