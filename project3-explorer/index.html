@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocket Sect</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Dosis:wght@600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        R<img src="images/lock.svg" alt="logo rocket" class="logo-img"/>cket.sect
+      </div>
+      <nav class="nav">
+        <a href="#start">Start</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="start">
+        <div class="hero-text">
+          <h1>Seus dados estão <span>protegidos</span>?</h1>
+          <p class="texto-main">
+            Informação é fundamental e <strong>extremamente importante</strong> para qualquer empresa.<br>
+            Aqui é um <strong>texto</strong> como se fosse uma apresentação de <span>segurança da informação</span> e produto, com o texto todo estilizado.
+          </p>
+          <a href="#works" class="btn-main">Conheça mais</a>
+        </div>
+        <img class="hero-img" src="images/woman-computer.png" alt="Moça do computador" />
+      </section>
+      <section id="works" class="cards-section">
+        <h2>Como protegemos você</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <img src="images/lock.svg" alt="Proteção de dados">
+            <div class="card-content">
+              <h3>Proteção Total</h3>
+              <p>Seus dados são criptografados e armazenados com máxima segurança.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/Line 1.svg" alt="Monitoramento">
+            <div class="card-content">
+              <h3>Monitoramento 24/7</h3>
+              <p>Monitoramento contínuo para garantir a integridade das informações.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/lock.svg" alt="Acesso restrito">
+            <div class="card-content">
+              <h3>Acesso Restrito</h3>
+              <p>Apenas pessoas autorizadas têm acesso aos seus dados.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contato-section">
+        <h2>Fale conosco</h2>
+        <p>Entre em contato para saber mais sobre nossas soluções de segurança.</p>
+        <a href="mailto:contato@rocketsect.com" class="btn-main">Enviar e-mail</a>
+      </section>
+    </main>
+    <footer>
+      <img class="image-line" src="images/Line 1.svg" alt="" />
+      <p class="footer-text">&copy; 2024 Rocket Sect. Todos os direitos reservados.</p>
+      <address>
+        Para mais informações siga no Instagram <a href="#">@iceefast</a>
+      </address>
+    </footer>
+    <script>
+      // Rolagem suave para âncoras
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          const href = this.getAttribute('href');
+          if (href.length > 1 && document.querySelector(href)) {
+            e.preventDefault();
+            document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
